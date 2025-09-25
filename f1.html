@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome</title>
+        <link rel="icon" type="image/html" href="images.png">
+    </head>
+    <body>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>User Detail</legend>
+                <br>
+                <label for="a1">Name</label>
+                <input type="text" id="a1" name="uname" placeholder="Enter your name." maxlength="15" autofocus>
+                <br>
+                <label for="a2">Password</label>
+                <input type="password" id="a2" name="password" placeholder="Enter your password.">
+                <br>
+                <label for="a3">Email</label>
+                <input type="email" id="a3" name="email" placeholder="Enter your Email">
+                <br>
+                <label for="a4">Phone</label>
+                <input type="tel" id="a4" name="phone" placeholder="Enter your Phone Number.">
+                <br>
+                Gender: <input type="radio" name="gen" value="male">Male
+                <input type="radio" name="gen" value="female">Female
+                <br>
+                Hobbies: <input type="checkbox" name="hob" value="music">Music
+                <input type="checkbox" name="hob" value="reading">Reading
+                <input type="checkbox" name="hob" value="sleeping">Sleeping
+                <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Additional Details</legend>
+                <br>
+                Date of Birth: <input type="date" name="dob" min="1970-01-01" max="2025-09-25">
+                <br>
+                Age: <input type="number" name="age" min="0" max="115" step="1">
+                <br>
+                Favourite colour: <input type="color" name="favcolor" value="#0000FF">
+                <br>
+                Preferred Sport: <input list="sports" name="psports">
+                <datalist id="sports">
+                    <option value="cricket">cricket</option>
+                    <option value="football">football</option>
+                    <option value="hockey">hockey</option>
+                </datalist>
+                <br>
+                Branch: 
+                <select name="branch">
+                 <option value="select" selected disabled>select branch</option>
+                 <optgroup label="Computer">
+                    <option value="CE">CE</option>
+                    <option value="IT">IT</option>
+                 </optgroup>
+                 <optgroup label="other">
+                    <option value="EC">EC</option>
+                    <option value="CIVIL">CIVIL</option>
+                 </optgroup>
+            </select>
+            <br>
+            Remark: <textarea name="msg" cols="20" rows="5">Enter your message</textarea>  
+            <br>
+            Range: <input type="range" name="r" min="0" max="50" step="5">
+            <br>  
+            File: <input type="file" name="resume" accept=".pdf,.doc" multiple>
+            </fieldset>
+            <br>
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </body>
+</html>
